@@ -1,70 +1,83 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Social-Media-API
 
-## Available Scripts
+The SocialMediaAPI is a robust and secure backend service designed to power your social media platform. It provides a comprehensive set of endpoints and features to enable users to interact, share content, and connect with others in a dynamic and engaging environment.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+**Server:** Node, Express, MongoDB, JWT, Bcrypt
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- User Authentication and Authorization:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Secure user authentication using JWT (JSON Web Tokens) to ensure the integrity and confidentiality of user sessions.
+    
+    Role-based access control (RBAC) to manage user roles and permissions, allowing fine-grained control over user actions and data access.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Profile Management:
 
-### `npm run eject`
+    Users can create and manage their profiles, including updating profile information, uploading profile pictures
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Content Sharing:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Users can create, publish, and share various types of content, including text-based updates, images, videos, and links.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Social Interactions:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    Seamless social interactions such as liking, commenting, and sharing posts, fostering engagement and fostering connections between users.
+    
+    Real-time notifications to keep users informed of new followers, likes, comments, and mentions, enhancing user engagement and interaction within the platform.
 
-## Learn More
+- Direct Messaging:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Private messaging functionality to enable users to communicate directly with each other, facilitating private conversations and fostering deeper connections between users.
+    
+    Real-time updates for new messages and message read receipts, providing users with a responsive and interactive messaging experience.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Data Privacy and Security:
 
-### Code Splitting
+    Robust data privacy and security measures to protect users' sensitive information and ensure compliance with data protection regulations.
+    
+    Encryption of sensitive data such as passwords and access tokens, secure storage practices, and adherence to industry best practices for data security.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To run this project, you will need to add the following environment variables to your .env file
 
-### Making a Progressive Web App
+`MONGO_URL`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+`JWT_SECRET`
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Run Locally
 
-### Deployment
+Clone the project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+  git clone https://github.com/Ameya02/Social-Media-API.git
+```
 
-### `npm run build` fails to minify
+Go to the project directory
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+  cd Social-Media-API
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run server
+```
+
