@@ -4,8 +4,16 @@ const asyncHandler = require('express-async-handler');
 const Post = require('../models/postModel');
 
 const createPost = asyncHandler(async (req, res) => {
-    const { content, attachments } = req.body;
+    const { content } = req.body;
 
+    // Check if files were uploaded
+    const attachments = req.files.map(file => {
+        return {
+          filename: file.filename,
+          url: file.path 
+        };
+      });
+    
     // Create a new post
     const post = await Post.create({
       author: req.user._id, 
