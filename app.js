@@ -14,7 +14,7 @@ connectDB();
 app.use(express.json());
 app.use(morgan("dev"))
 app.use("/api", routes)
-app.use(errorHandler)
+// app.use(errorHandler)
 app.listen(Port, console.log("listening on port", Port));
 
 
